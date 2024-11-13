@@ -1,0 +1,105 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.41583636239861443 -0.38987050541301055 -0.8216331959676969 4.454355522781573
+  position 0.3764925248346491 -2.4380172316973856 2.9990695426656537
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+Solid {
+  translation -0.06661066700272551 -0.03208674808235944 0.04917641865039784
+  rotation 0.46421551637579817 0.4663481315699649 0.7530095447848945 2.3494287838742354
+  children [
+    Shape {
+      appearance PBRAppearance {
+        roughness 1
+        metalness 0
+      }
+      geometry DEF BALL_GEOMETRY Sphere {
+        radius 0.05
+      }
+    }
+  ]
+  boundingObject USE BALL_GEOMETRY
+  physics Physics {
+  }
+  linearVelocity 0.0035842527979958795 0.001069630291171308 1.3669565261371884e-05
+  angularVelocity -0.02139260582342616 0.07168505595991757 -0.04287410777435353
+}
+Solid {
+  translation 0 -0.49 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.02 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation 0 0.49 0.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.02 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation -0.49 -4.99606e-07 0.1
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.02 0.2
+      }
+    }
+  ]
+  name "solid(3)"
+}
+Solid {
+  translation 0.49 4.99606e-07 0.1
+  rotation 0 0 1 -1.5707953071795862
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.02 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+}
